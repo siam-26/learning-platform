@@ -1,0 +1,41 @@
+.loginForm {
+    border: 1px solid rgb(210, 202, 202);
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-left: 30%;
+    padding: 5%;
+}
+
+.loginBtn {
+    background-color: rgb(212, 48, 76) !important;
+    border: none !important;
+    margin-top: 3%;
+}
+
+.loginBtn:hover {
+    background-color: rgb(212, 48, 76);
+    opacity: 0.9;
+}
+
+.btnGoogle,
+.btnGithub {
+    background-color: rgb(212, 48, 76) !important;
+    border: none !important;
+}
+
+.btnGoogle:hover {
+    background-color: rgb(212, 48, 76);
+    opacity: 0.9;
+}
+
+.btnGoogleList,
+.btnGithubList {
+    background-color: rgb(212, 48, 76);
+    color: white;
+    border: none;
+}
+
+.btnGithub:hover {
+    background-color: rgb(212, 48, 76);
+    opacity: 0.9;
+}
