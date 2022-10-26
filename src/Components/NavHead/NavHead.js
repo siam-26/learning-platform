@@ -24,7 +24,7 @@ const NavHead = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="#features">Courses</Nav.Link>
                         <Nav.Link href="#pricing">FAQ</Nav.Link>
-                        <Nav.Link href="#pricing">Blog</Nav.Link>
+                        <Nav.Link href="#pricing"><Link to='/blog'>Blog</Link></Nav.Link>
 
                     </Nav>
                     <Nav>
