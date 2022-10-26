@@ -22,15 +22,16 @@ const NavHead = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
+                        <Nav.Link href="#features">Home</Nav.Link>
                         <Nav.Link href="#features">Courses</Nav.Link>
                         <Nav.Link href="#pricing">FAQ</Nav.Link>
-                        <Nav.Link href="#pricing"><Link to='/blog'>Blog</Link></Nav.Link>
+                        <Nav.Link href="#pricing"><Link className='blogs-link' to='/blog'>Blog</Link></Nav.Link>
 
                     </Nav>
                     <Nav>
                         {
                             user?.uid ?
-                                <div className='d-flex'>
+                                <div className='profile-div'>
                                     <Nav.Link href="#deets">
                                         {
                                             user?.photoURL ?
@@ -41,21 +42,17 @@ const NavHead = () => {
 
                                     </Nav.Link>
                                     <Nav.Link onClick={logOut} className='headingLogOut' eventKey={2} href="#memes">
-                                        <Link to='/logout'>Log out</Link>
+                                        <Link className='logOutLink' to='/login'>Log out</Link>
                                     </Nav.Link>
 
-                                    {/* <Link onClick={logOut} className='headingLogOut' to='/logout'>Log out</Link> */}
+
                                 </div>
 
                                 :
 
                                 <Nav.Link className='headingLogin' eventKey={2} href="#memes">
-                                    <Link to='/login'>Log in</Link>
+                                    <Link className='logInLink' to='/login'>Log in</Link>
                                 </Nav.Link>
-
-                            // <Link className='headingLogin' to='/login'>Log in</Link>
-
-
                         }
 
 
