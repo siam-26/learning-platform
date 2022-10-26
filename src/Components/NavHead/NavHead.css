@@ -1,0 +1,35 @@
+.logoImg {
+    height: 25px;
+    width: 15%;
+    border-radius: 60%;
+}
+
+.userImg {
+    height: 50px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.userIcon {
+    height: 50px;
+    width: 100%;
+}
+
+.headingLogOut,
+.headingLogin {
+    text-decoration: none;
+    background-color: rgb(212, 48, 76) !important;
+    border: none !important;
+
+    color: white;
+    height: 35px;
+    margin-top: 22%;
+    border-radius: 8px;
+
+
+}
+
+.userImgDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
