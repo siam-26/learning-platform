@@ -1,0 +1,28 @@
+.courseFeatures-container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.contents {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width:791px) {
+    .contents {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10%;
+        margin-left: 10%;
+
+    }
+
+    .courseFeatures-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

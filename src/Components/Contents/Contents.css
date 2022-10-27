@@ -1,0 +1,15 @@
+.span {
+    color: #898989;
+    font-weight: 600;
+}
+
+.shortDetails {
+    color: #898989;
+    font-weight: 500;
+}
+
+.contents-details-btn {
+    background-color: rgb(212, 48, 76) !important;
+    border: none !important;
+    font-weight: bold;
+}
