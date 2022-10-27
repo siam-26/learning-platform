@@ -5,6 +5,7 @@ import CheckOut from "../CheckOut/CheckOut";
 import CourseInfo from "../CourseInfo/CourseInfo";
 import CoursesFeatures from "../CoursesFeatures/CoursesFeatures";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import FAQ from "../FAQ/FAQ";
 import LogIn from "../LogIn/LogIn";
 import Main from "../Main/Main";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
@@ -51,6 +52,10 @@ export const routes = createBrowserRouter([
                 loader: ({ params }) => {
                     return fetch(`http://localhost:5000/checkout/${params.id}`)
                 }
+            },
+            {
+                path: '/FAQ',
+                element: <FAQ></FAQ>
             }
 
         ],

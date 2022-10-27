@@ -53,8 +53,8 @@ const Register = () => {
             <Form onSubmit={createrUserHandler} className='loginForm w-50'>
                 <h1 className='mb-5'>Register now</h1>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Your Name</Form.Label>
-                    <Form.Control type="text" name="name" placeholder="Enter your name" />
+                    <Form.Label>Full Name</Form.Label>
+                    <Form.Control type="text" name="name" placeholder="Enter your FullName" />
 
                 </Form.Group>
 
