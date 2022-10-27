@@ -2,6 +2,7 @@ import React from 'react';
 import './Contents.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,7 +21,7 @@ const Contents = ({ details }) => {
                     </div>
                     <Card.Title className='mt-2'>{name}</Card.Title>
                     <Card.Text className='shortDetails mt-3'>{shortDetails}</Card.Text>
-                    <Button className='mt-3 contents-details-btn' variant="primary">Details</Button>
+                    <Link to={`/course-info/${details.id}`}><Button className='mt-3 contents-details-btn' variant="primary">Details</Button></Link>
                 </Card.Body>
 
             </Card>

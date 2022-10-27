@@ -19,18 +19,18 @@
     width: 100%;
 }
 
-.blogs-link {
+/* .blogs-link {
     text-decoration: none;
     color: white;
-}
+} */
 
 .headingLogOut,
 .headingLogin {
     text-decoration: none;
-    background-color: rgb(212, 48, 76) !important;
-    border: none !important;
+    /* background-color: rgb(212, 48, 76) !important;
+    border: none !important; */
 
-    color: white;
+    color: black;
 
     height: 35px;
     margin-top: 22%;
@@ -41,13 +41,34 @@
 
 .logOutLink,
 .logInLink {
-    color: white;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
+}
+
+.logOutLink:hover {
+    color: rgb(212, 48, 76) !important;
+}
+
+.logInLink:hover {
+    color: rgb(212, 48, 76) !important;
 }
 
 .userImgDiv {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.navNames {
+    text-decoration: none;
+    color: black !important;
+}
+
+.navNames:hover {
+    color: rgb(212, 48, 76) !important;
+    border: none !important;
+
+    color: white;
 }
 
 /* Mobile Responsive */

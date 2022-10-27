@@ -15,17 +15,17 @@ const NavHead = () => {
 
 
     return (
-        <Navbar className='navbar' collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar className='navbar' collapseOnSelect expand="lg" bg="white">
             <Container>
 
-                <Navbar.Brand href="#home"><img roundedCircle className='logoImg' src={logo} alt="" /> CodersInfo BD</Navbar.Brand>
+                <Link className='navNames' to='/'><Navbar.Brand href="#home"><img roundedCircle className='logoImg' src={logo} alt="" /> CodersInfo BD</Navbar.Brand></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#features"><Link to='/'>Home</Link></Nav.Link>
-                        <Nav.Link href="#features"><Link to='/coursesFeatures'>Courses</Link></Nav.Link>
-                        <Nav.Link href="#pricing">FAQ</Nav.Link>
-                        <Nav.Link href="#pricing"><Link className='blogs-link' to='/blog'>Blog</Link></Nav.Link>
+                        <Nav.Link href="#features"><Link className='navNames' to='/'>Home</Link></Nav.Link>
+                        <Nav.Link href="#features"><Link className='navNames' to='/coursesFeatures'>Courses</Link></Nav.Link>
+                        <Nav.Link className='navNames' href="#pricing">FAQ</Nav.Link>
+                        <Nav.Link href="#pricing"><Link className='navNames blogs-link' to='/blog'>Blog</Link></Nav.Link>
 
                     </Nav>
                     <Nav>

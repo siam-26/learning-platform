@@ -1,0 +1,61 @@
+.courseInfo-header {
+    background-color: #14497d;
+    color: white;
+}
+
+.courseInfo-header h2 {
+    padding: 4% 0 0 3%;
+    font-weight: bold;
+}
+
+.courseInfo-header p {
+    padding: 1% 0 0 3%;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.courseImg {
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 25%;
+}
+
+.description {
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.courseInfo-p {
+    color: #898989;
+    font-weight: 500;
+    margin-left: 10%;
+    text-align: justify;
+    width: 80%;
+}
+
+.pdfbtn {
+    background-color: rgb(212, 48, 76) !important;
+    border: none !important;
+    color: white;
+    font-weight: bold;
+    margin-left: 3%;
+    margin-bottom: 4%;
+}
+
+.pdfbtn:hover {
+    opacity: 0.9;
+}
+
+.premiumAccessBtn {
+    background-color: rgb(212, 48, 76) !important;
+    border: none !important;
+    color: white;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.premiumAccessBtn:hover {
+    opacity: 0.9;
+}

@@ -13,33 +13,33 @@ const CarouselHome = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>―Henry Ford</h3>
+                        <p className='quotes'> <i>“Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young.”</i></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="carousel-img d-block w-100"
                         src="https://potomac.edu/wp-content/uploads/2020/12/benefits-of-coding-e1606911064541.jpg"
                         alt="Second slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>― Confucius</h3>
+                        <p className='quotes'><i>“Learn as if you were not reaching your goal and as though you were scared of missing it”</i></p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="carousel-img d-block w-100"
                         src="https://image.shutterstock.com/shutterstock/photos/175434071/display_1500/stock-photo-imagination-xray-brain-isolated-on-black-background-175434071.jpg"
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        <h3>― Albert Einstein</h3>
+                        <p className='quotes'>
+                            <i>“Intellectual growth should commence at birth and cease only at death.”</i>
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>

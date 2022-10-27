@@ -6,7 +6,7 @@ const LeftSideFeatures = ({ features }) => {
     const { name } = features;
     return (
         <div className='features-div mt-5'>
-            <h6 className='names'><Link className='featuresDetailsLink' to='/featuresDetails'>{name}</Link></h6>
+            <h6 className='names'><Link className='featuresDetailsLink' to={`/course-info/${features.id}`}>{name}</Link></h6>
         </div>
     );
 };
