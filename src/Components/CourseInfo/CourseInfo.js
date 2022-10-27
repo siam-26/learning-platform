@@ -3,15 +3,18 @@ import './CourseInfo.css';
 import { Link, useLoaderData } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
+
 const CourseInfo = () => {
     const courseInfo = useLoaderData();
     console.log(courseInfo);
     return (
         <div>
+
             <header className='courseInfo-header'>
                 <h2>{courseInfo.name}</h2>
                 <p>{courseInfo.shortDetails}</p>
                 <p><small><i>Lecturer: {courseInfo.lecturer}</i></small></p>
+
                 <Button className='pdfbtn' >Pdf</Button>
 
             </header>

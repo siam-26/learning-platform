@@ -69,3 +69,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # b610-learning-platform-client-side-siam-26
+
+
+
+# Website Name: 
+Coders-info-BD
+
+# Website Link:
+
+# Features:
+• Added a Navbar with user information like user photo if logged in.
+• Added authentication to login and register form.
+• Added google and github sign in with popub authentication.
+• Added six courses detail informations.
+• Added private route on checkout page.
+
+# Technologies that are used to make this project:
+• Firebase.
+• React app.
+• React Bootstrap.

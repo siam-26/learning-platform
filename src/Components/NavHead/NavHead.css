@@ -88,11 +88,6 @@
 
     }
 
-    .logOutLink,
-    .logInLink {
-        color: white;
-        text-decoration: none;
-    }
 
     .userImg {
         width: 10%;
