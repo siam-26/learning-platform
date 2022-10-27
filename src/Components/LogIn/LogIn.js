@@ -6,13 +6,14 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../Context/AuthProvider';
-import { GoogleAuthProvider } from 'firebase/auth';
+import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import { useState } from 'react';
 
 const LogIn = () => {
     const [error, setError] = useState('');
-    const { googlePopUp, usersignIn } = useContext(AuthContext);
-    const provider = new GoogleAuthProvider();
+    const { googlePopUp, usersignIn, githubPopup } = useContext(AuthContext);
+    const googleProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
 
     //sign in 
     const signInHandler = (event) => {
@@ -33,9 +34,9 @@ const LogIn = () => {
                 setError(error.message);
             })
     }
-
+    //google popup
     const googlePopUpHandler = () => {
-        googlePopUp(provider)
+        googlePopUp(googleProvider)
             .then(result => {
                 const user = result.user;
                 console.log(user);
@@ -43,6 +44,18 @@ const LogIn = () => {
             .catch(error => {
                 console.log(error);
 
+            })
+    }
+
+    //github popup
+    const githubPopupHandler = () => {
+        githubPopup(githubProvider)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(error => {
+                console.error(error);
             })
     }
     return (
@@ -71,7 +84,7 @@ const LogIn = () => {
                 <ListGroup>
                     <Button onClick={googlePopUpHandler} className='btnGoogle mt-3'>Login with Google</Button>
 
-                    <Button className='btnGithub mt-4'>Login with Github</Button>
+                    <Button onClick={githubPopupHandler} className='btnGithub mt-4'>Login with Github</Button>
                 </ListGroup>
 
                 <p className='mt-4'><small>Need an account? <Link to='/register'>Register now</Link></small></p>
