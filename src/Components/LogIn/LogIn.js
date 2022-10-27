@@ -3,7 +3,7 @@ import './LogIn.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../Context/AuthProvider';
 import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
@@ -14,6 +14,10 @@ const LogIn = () => {
     const { googlePopUp, usersignIn, githubPopup } = useContext(AuthContext);
     const googleProvider = new GoogleAuthProvider();
     const githubProvider = new GithubAuthProvider();
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || '/';
 
     //sign in 
     const signInHandler = (event) => {
@@ -28,6 +32,7 @@ const LogIn = () => {
                 console.log(user);
                 form.reset();
                 setError('');
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 console.log(error);

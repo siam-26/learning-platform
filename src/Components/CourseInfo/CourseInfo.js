@@ -1,6 +1,6 @@
 import React from 'react';
 import './CourseInfo.css';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
 const CourseInfo = () => {
@@ -22,7 +22,7 @@ const CourseInfo = () => {
                 <h2 className='description'>Course Description</h2>
                 <p className='courseInfo-p'>{courseInfo.moreDetails}</p>
 
-                <Button className='premiumAccessBtn' >Get premium access</Button>
+                <Link to={`/checkout/${courseInfo.id}`}><Button className='premiumAccessBtn' >Get premium access</Button></Link>
             </main>
 
         </div>
