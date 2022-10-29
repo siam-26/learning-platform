@@ -36,21 +36,21 @@ export const routes = createBrowserRouter([
                 path: '/coursesFeatures',
                 element: <CoursesFeatures></CoursesFeatures>,
                 loader: () => {
-                    return fetch('http://localhost:5000/course-info');
+                    return fetch('https://coders-info-bd-server.vercel.app/course-info');
                 }
             },
             {
                 path: '/course-info/:id',
                 element: <CourseInfo></CourseInfo>,
                 loader: ({ params }) => {
-                    return fetch(`http://localhost:5000/course-info/${params.id}`)
+                    return fetch(`https://coders-info-bd-server.vercel.app/course-info/${params.id}`)
                 }
             },
             {
                 path: '/checkout/:id',
                 element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>,
                 loader: ({ params }) => {
-                    return fetch(`http://localhost:5000/checkout/${params.id}`)
+                    return fetch(`https://coders-info-bd-server.vercel.app/checkout/${params.id}`)
                 }
             },
             {

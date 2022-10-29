@@ -1,8 +1,5 @@
-.carousel-img {
-    height: 550px;
-    filter: brightness(40%);
-}
-
-.quotes {
-    font-weight: bold;
+.codingImg {
+    width: 100%;
+    filter: brightness(80%);
+    height: 600px;
 }

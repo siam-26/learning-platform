@@ -13,7 +13,8 @@ import { useState } from 'react';
 
 const NavHead = () => {
     const { user, logOut } = useContext(AuthContext);
-    const { darkLightBtn, setDarkLightBtn } = useState(false);
+    const [darkLightBtn, setDarkLightBtn] = useState(false);
+
 
 
     return (
@@ -28,7 +29,7 @@ const NavHead = () => {
                         <Nav.Link href="#features"><Link className='navNames' to='/coursesFeatures'>Courses</Link></Nav.Link>
                         <Nav.Link href="#pricing"><Link className='navNames' to='/FAQ'>FAQ</Link></Nav.Link>
                         <Nav.Link href="#pricing"><Link className='navNames blogs-link' to='/blog'>Blog</Link></Nav.Link>
-                        <Nav.Link href="#pricing">
+                        <Nav.Link href="#pricing">DarkMode
                             {
                                 darkLightBtn ?
                                     <FaMoon onClick={() => setDarkLightBtn(!darkLightBtn)}></FaMoon>
