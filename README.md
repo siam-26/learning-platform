@@ -81,8 +81,8 @@ Coders-info-BD
 • Added a Navbar with user information like user photo if logged in.
 • Added authentication to login and register form.
 • Added google and github sign in with popub authentication.
-• Added six courses detail informations.
-• Added private route on checkout page.
+• Added pdf assessable button.
+• Added private route on checkout.
 
 # Technologies that are used to make this project:
 • Firebase.

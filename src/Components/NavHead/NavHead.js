@@ -7,11 +7,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Context/AuthProvider';
-import { FaUserCircle } from 'react-icons/fa';
+import { FaMoon, FaSun, FaUserCircle } from 'react-icons/fa';
 import { Image } from 'react-bootstrap';
+import { useState } from 'react';
 
 const NavHead = () => {
     const { user, logOut } = useContext(AuthContext);
+    const { darkLightBtn, setDarkLightBtn } = useState(false);
 
 
     return (
@@ -26,6 +28,14 @@ const NavHead = () => {
                         <Nav.Link href="#features"><Link className='navNames' to='/coursesFeatures'>Courses</Link></Nav.Link>
                         <Nav.Link href="#pricing"><Link className='navNames' to='/FAQ'>FAQ</Link></Nav.Link>
                         <Nav.Link href="#pricing"><Link className='navNames blogs-link' to='/blog'>Blog</Link></Nav.Link>
+                        <Nav.Link href="#pricing">
+                            {
+                                darkLightBtn ?
+                                    <FaMoon onClick={() => setDarkLightBtn(!darkLightBtn)}></FaMoon>
+                                    :
+                                    <FaSun onClick={setDarkLightBtn}></FaSun>
+                            }
+                        </Nav.Link>
 
                     </Nav>
                     <Nav>
